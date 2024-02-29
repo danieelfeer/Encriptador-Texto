@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+@font-face {
+  font-family: Cyber;
+  src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+  font-display: swap;
+}
+
+/* Reset CSS */
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor1: #091833;
+  --cor2: #0DF2F2;
+  --cor3: #EA00D9;
+  --cor4: #fff;
+
+  --font1: 'Share Tech Mono', 'monospace';
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  font-family: var(--font1);
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--cor1);
+  color: var(--cor4);
+
+}
+
+.logo {
+  font-family: "Cyeber", monospace;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+section.entrada-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+textarea{
+  font-size: 1rem;
+}
+
+#input-text {
+  background-color: transparent;
+  color: var(--cor4);
+  font-family: var(--font1);
+
+  padding: 1rem;
+  border: 3.5px solid var(--cor3);
+  border-radius: 0px 45px;
+
+  height: 45vh;
+  width: 30vw;
+}
+
+#input-text:focus {
+  outline: 2px solid #ea005a;
+}
+
+.section-resultado {
+  border: 3.5px solid var(--cor2);
+  border-radius: 0 45px;
+  width: 30vw;
+}
+
+div.cadeado {
+  transform: scale(7);
+}
+
+#ico-cadeado-fechado {
+  opacity: 0.7;
+  /* Opacidade inicial */
+  transition: opacity 0.5s ease;
+  /* Transição suave */
+}
+
+#div-resultado {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+
+#output-text {
+  display: none;
+  background-color: #ffffff20;
+  color: var(--cor4);
+  font-family: var(--font1);
+
+  padding: 1rem;
+  border: 3.5px solid var(--cor4);
+  border-bottom: none;
+  border-radius: 2rem 2rem 0 0;
+
+  height: 45vh;
+  width: 20vw;
+}
+
+.btn-copiar {
+  display: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+
+  height: 7vh;
+  font-family: "Cyber", monospace;
+  font-size: 1rem;
+  font-display: swap;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border: 3.5px solid var(--cor4);
+}
+
+a {
+  color: var(--cor4);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+}
