@@ -148,3 +148,60 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+
+
+@media (max-width: 680px) {
+  body{
+    flex-direction: column;
+    overflow-y: scroll;  
+    overflow-x: hidden;
+    width: 100vw;
+    gap: 0rem;
+  }
+
+  main{
+    flex-direction: column;
+  }
+
+  section.entrada-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100vw;
+  }
+  
+  .aviso{
+    text-align: center;
+  }
+
+  #input-text{
+    height: 40vh;
+    width: 75vw;
+  }
+
+  
+  div.botoes-entrada{
+    gap: 1rem;
+  }
+
+  .cyber-btn{
+    width: 40vw;
+    height: 12vh;
+  }
+
+  section.section-resultado{    
+    height: 50vh;
+    width: 75vw;
+  }
+
+  #div-resultado{
+    width: 55vw;
+  }
+  
+  #output-text{
+    width: 55vw;
+    height: 35vh;
+  }
+
+
+}
