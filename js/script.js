@@ -6,8 +6,13 @@ A letra "o" é convertida para "ober"
 A letra "u" é convertida para "ufat"
 */
 
+function PularParaResultado(){
+    document.querySelector(".section-resultado").scrollIntoView({behavior: 'smooth'});
+}
+
 function BtnEncriptar(){
-    
+    PularParaResultado();
+
     var textoEntrada = document.getElementById("input-text");
     var textoSaida = document.getElementById("output-text");
 
@@ -44,6 +49,7 @@ function Encriptar(stringEncriptada){
 }
 
 function BtnDesencriptar(){
+    PularParaResultado();
 
     var textoEntrada = document.getElementById("input-text");
     var textoSaida = document.getElementById("output-text");
